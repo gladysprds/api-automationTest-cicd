@@ -8,3 +8,9 @@ Feature: User
     When I request GET detail user
     Then I validate the status code is 200
     And I validate the data detail
+
+  Scenario: POST - As an admin I have to be able to create new user
+    Given I set an endpoint for POST new user
+    When I request POST detail user
+    Then I validate the status create code is 201
+    And validate the data detail after create user

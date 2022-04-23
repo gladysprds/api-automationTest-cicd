@@ -10,8 +10,6 @@ import starter.user.Get;
 
 public class stepdef {
 
-
-
     @Steps
     Get get;
 
